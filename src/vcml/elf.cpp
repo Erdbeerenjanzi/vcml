@@ -19,6 +19,7 @@
 #include <fcntl.h> // for open
 
 #include "vcml/elf.h"
+#include <unistd.h>
 
 namespace vcml {
 
@@ -200,7 +201,7 @@ namespace vcml {
             VCML_ERROR("cannot find elf program header");
 
         elf_end(e);
-        close(fd);
+        ::close(fd);
     }
 
     elf::~elf() {

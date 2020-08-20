@@ -18,6 +18,7 @@
 
 #include "vcml/logging/logger.h"
 #include "vcml/properties/property_provider_file.h"
+#include <unistd.h>
 
 namespace vcml {
 

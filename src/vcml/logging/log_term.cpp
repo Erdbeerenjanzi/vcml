@@ -17,6 +17,7 @@
  ******************************************************************************/
 
 #include "vcml/logging/log_term.h"
+#include <unistd.h>
 
 namespace vcml {
 

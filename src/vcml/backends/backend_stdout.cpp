@@ -18,6 +18,7 @@
 
 #include "vcml/common/utils.h"
 #include "vcml/backends/backend_stdout.h"
+#include <unistd.h>
 
 namespace vcml {
 

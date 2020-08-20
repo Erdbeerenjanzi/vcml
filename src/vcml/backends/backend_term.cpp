@@ -17,6 +17,7 @@
  ******************************************************************************/
 
 #include "vcml/backends/backend_term.h"
+#include <unistd.h>
 
 namespace vcml {
 

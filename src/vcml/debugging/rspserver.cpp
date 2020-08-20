@@ -20,6 +20,8 @@
 
 #include "vcml/logging/logger.h"
 #include "vcml/debugging/rspserver.h"
+#include <unistd.h>
+
 
 namespace vcml { namespace debugging {
 
@@ -236,7 +238,7 @@ namespace vcml { namespace debugging {
 
     void rspserver::disconnect() {
         if (m_fd != -1) {
-            close(m_fd);
+            ::close(m_fd);
             m_fd = -1;
             handle_disconnect();
         }
